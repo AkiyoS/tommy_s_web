@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tommy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <section class="header">
+            <h1>Tommy</h1>
+            <nav class="works">
+                <a href="#works">works</a>
+                <a href="#prof">profile</a>
+                <a href="#contact">contact</a>
+            </nav>
+
+            <div class="modal">
+                <button id="menuIcon"><img src="./img/menu.png" alt="" width="40"></button>
+                <button id="closeIcon" class="tg"><img src="./img/close.png" alt="" width="40"></button>
+            </div>
+            <div class="menuOpen" style="display:none">
+                <a href="#works">works</a>
+                <a href="#prof">profile</a>
+                <a href="#contact">contact</a>
+            </div>
+        </section>
+        <section class="topImg">
+            <p>Call me if you wanna<br>
+                find you,<br>
+                express you,<br>
+                or go with a <span class="swing">swing</span>.</p>
+        </section>
+        <div class="line">
+            <a href="#works"><img src="img/scrl.png"></a>
+        </div>
+        <section id="works">
+            <div class="sTitle">
+                <h2>works</h2>
+            </div>
+            <div class="article">
+                <p><img src="./img/ff.png" alt="image" width="400"></p>
+                <p class="describe">＜編集・執筆＞<br>
+                    ・都内の会員制コミュニケーションスペース<br>
+                    　「XXXX XXXX」の取材記事を編集しました。<br>
+                    ・XX県の産学協同プロジェクト<br>
+                    　「XXとXXのXX」の取材記事を編集しました。<br>
+                    ・アーティストXXXXのNEW ALBUM<br>
+                    　「XXXX XX X XXX」の<br>
+                    　レコーディングプロジェクトに関する記事を<br>
+                    　執筆しました。</p>
+            </div>
+            <div class="article">
+                <p><img src="./img/aaa.jpg" alt="image" width="400"></p>
+                <p class="describe">＜ペインティング＞<br>
+                    ・カフェ「XXX XXXX」のn周年イベントにて<br>
+                    　ライブペイントを行いました。<br>
+                    ・XXX主催のイベント「XX XXXX XX」にて<br>
+                    　ライブペイントを行いました。<br>
+                    ・「XXXXXXXXXXXXX」の看板文字を描きました。</p>
+            </div>
+            <div class="article">
+                <p><img src="./img/gg.jpg" alt="image" width="400"></p>
+                <p class="describe">＜ライブ活動＞<br>
+                    「XXX XXXX」にて<br>
+                    　ジャズライブイベントを行いました。<br>
+            </div>
+        </section>
+        <div class="line">
+        </div>
+        <section id="prof">
+            <div class="sTitle">
+                <h2>profile</h2>
+            </div>
+            <div class="article">
+                <p><img src="./img/ee.jpg" alt="image" width="400"></p>
+                <p class="describe"><span class="tommy">Tommy</span><br>
+                    <br>
+                    19XX年、東京都生まれ。<br>
+                    <br>
+                    編集・ペインティングをメインに<br>
+                    フリーランスとして活動中。<br>
+                    2015年からはじめたジャズピアノでは、<br>
+                    2020年に初の単独ライブを開催した。<br>
+            </div>
+        </section>
+        <div class="line">
+        </div>
+        <section id="contact">
+            <div class="sTitle">
+                <h2>contact</h2>
+            </div>
+            <div class="contactForm">
+                <!-- <form action="insert.php" method="post"> -->
+                <form>
+                    <div class="name">
+                        <p>ニックネーム</p>
+                        <input type="text" name="name" id="name" placeholder="ニックネーム">
+                    </div>
+                    <div class="q">
+                        <p>お問い合わせ</p>
+                        <textarea name="q" id="q" cols="30" rows="20" placeholder="内容を入力"></textarea>
+                    </div>
+                    <!-- <input type="submit" id="submit" value="送信"> -->
+                    <input type="button" id="submit" value="送信">
+
+                </form>
+            </div>
+        </section>
+
+
+        <section class="sns"></section>
+        <section class="footer"></section>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $('#menuIcon').on('click', function () {
+            $('.menuOpen').show(500);
+            $('.modal > button').toggleClass('tg')
+        })
+
+        $('#closeIcon').on('click', function () {
+            $('.menuOpen').hide(500);
+            $('.modal > button').toggleClass('tg');
+        })
+    </script>
+
+</body>
+
+</html>
