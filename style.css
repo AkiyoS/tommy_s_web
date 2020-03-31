@@ -52,7 +52,7 @@ button {
     border: none;
 }
 
-.topImg {
+#topImg {
     background-image: url(./img/ddd.jpg);
     background-size: cover;
     height: 450px;
@@ -60,7 +60,7 @@ button {
     background-position: right top;
 }
 
-.topImg > p {
+#topImg > p {
     margin: 0;
     color: #fff;
     position: absolute;

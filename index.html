@@ -30,10 +30,12 @@
             </div>
         </section>
         <section class="topImg">
-            <p>Call me if you wanna<br>
-                find you,<br>
-                express you,<br>
-                or go with a <span class="swing">swing</span>.</p>
+            <div id="topImg" style="display: none;">
+                <p>Call me if you wanna<br>
+                    find you,<br>
+                    express you,<br>
+                    or go with a <span class="swing">swing</span>.</p>
+            </div>
         </section>
         <div class="line">
             <a href="#works"><img src="img/scrl.png"></a>
@@ -119,16 +121,7 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
-        $('#menuIcon').on('click', function () {
-            $('.menuOpen').show(500);
-            $('.modal > button').toggleClass('tg')
-        })
-
-        $('#closeIcon').on('click', function () {
-            $('.menuOpen').hide(500);
-            $('.modal > button').toggleClass('tg');
-        })
+    <script src='script.js'>
     </script>
 
 </body>
