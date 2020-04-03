@@ -173,3 +173,44 @@ form {
 #submit:hover {
     opacity: 0.8;
 }
+
+
+
+.topBtn {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 15px;
+}
+.topBtn a {
+    display: block;
+    background:#aaa;
+    opacity: 0.6;
+    text-align: center;
+    color: #222;
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: none;
+    filter:alpha(opacity=50);
+    width:80px;
+    height:80px;
+    -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    border-radius: 40px;
+    position: relative;
+}
+.topBtn a span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+#top .topBtn a:hover {
+    display: block;
+    background-color: #222;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+    filter:alpha(opacity=50);
+}
