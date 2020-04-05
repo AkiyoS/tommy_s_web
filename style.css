@@ -55,7 +55,7 @@ button {
 #topImg {
     background-image: url(./img/ddd.jpg);
     background-size: cover;
-    height: 450px;
+    height: 600px;
     position: relative;
     background-position: right top;
 }
@@ -64,10 +64,17 @@ button {
     margin: 0;
     color: #fff;
     position: absolute;
-    top:35%;
+    top:20%;
     left:10%;
     line-height: 2.5em;
     letter-spacing: 10px;
+}
+
+.sliderbox {
+    /* position: absolute;
+    bottom:5%; */
+    padding-top:400px;
+    margin: 0 auto;
 }
 
 .swing , .tommy {
@@ -75,6 +82,24 @@ button {
     font-weight: lighter;
     font-size: xx-large;
     font-family: 'Times New Roman', Times, serif;
+}
+
+#slideshow{
+    margin: 0 auto;
+    width:600px;
+    height:120px;
+    background-color: lightgray;
+    opacity: 0.7;
+    text-align: center;
+    line-height: 120px;
+}
+
+#onOff {
+    display: block;
+    margin: 10px auto;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
 }
 
 .line {

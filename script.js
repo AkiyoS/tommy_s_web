@@ -12,6 +12,34 @@ $(function () {
         $('.modal > button').toggleClass('tg');
     });
 
+    const news = [
+        'レスポンシブ対応になりました',
+        'ページTOPに戻るボタンを設置しました'
+    ];
+
+    let count = 0;
+    const slidenews = () => {
+        if (count >= news.length) {
+            count = 0;
+        } else {
+            $('#slideshow > p').html(news[count]);
+            count++;
+        }
+    }
+
+    let slideid = 0;
+    const startstop = () => {
+        if (slideid === 0) {
+            slideid = setInterval(slidenews, 2000);
+        } else {
+            clearInterval(slideid);
+            slideid = 0;
+        }
+    }
+
+    document.getElementById('onOff').onclick = startstop;
+
+
     $(function () {
         var $topBtn = $(".topBtn")
         $topBtn.hide();
